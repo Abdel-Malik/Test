@@ -16,10 +16,14 @@ public class PileEntierPositifOuNul {
 	public static final int SUCCES = 1;
 	private final int tabNb[];
 	private int nbElem;
-
+	
+	/**Constructeur.
+	 * Utilise la valeur par défaut
+	 */
 	public PileEntierPositifOuNul() {
 		this(DEFAULT_VAL);
 	}
+	
 
 	/**
 	 * 
