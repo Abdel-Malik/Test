@@ -45,10 +45,19 @@ public class PileEntierPositifOuNul {
 		return (this.nbElem == 0);
 	}
 
+	/**
+	 * vérification si pile est pleine.
+	 * @return un booleen
+	 */
 	public boolean estPlein() {
 		return (this.nbElem == this.tabNb.length);
 	}
 
+	/**
+	 * 
+	 * @param entier
+	 * @return
+	 */
 	public int empiler(int entier) {
 		if (this.estPlein()) {
 			System.out.println("La pile est pleine");
