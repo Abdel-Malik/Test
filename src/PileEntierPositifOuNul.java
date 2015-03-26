@@ -4,13 +4,13 @@
  *
  */
 public class PileEntierPositifOuNul {
-	/** Taille par défaut de la pile. */
+	/** Taille par dÃ©faut de la pile. */
 	private static final int DEFAULT_VAL = 5;
 	/** Code erreur pile pleine. */
 	public static final int PILE_PLEINE = -1;
 	/** Code erreur pile vide. */
 	public static final int PILE_VIDE = -2;
-	/** Code erreur valeur saisie négative. */
+	/** Code erreur valeur saisie nÃ©gative. */
 	public static final int NEGATIF = -3;
 	/** Code succes. */
 	public static final int SUCCES = 1;
@@ -18,12 +18,13 @@ public class PileEntierPositifOuNul {
 	private int nbElem;
 	
 	/**Constructeur.
-	 * Utilise la valeur par défaut
+	 * Utilise la valeur par dÃ©faut
 	 */
 	public PileEntierPositifOuNul() {
 		this(DEFAULT_VAL);
 	}
 	
+
 
 	/**
 	 * 
@@ -46,7 +47,7 @@ public class PileEntierPositifOuNul {
 	}
 
 	/**
-	 * vérification si pile est pleine.
+	 * vÃ©rification si pile est pleine.
 	 * @return un booleen
 	 */
 	public boolean estPlein() {
@@ -64,7 +65,7 @@ public class PileEntierPositifOuNul {
 			return PILE_PLEINE;
 		}
 		if (entier < 0) {
-			System.out.println("Le nombre " + entier + " est inferieur à 0");
+			System.out.println("Le nombre " + entier + " est inferieur Ã  0");
 			return NEGATIF;
 		}
 		this.tabNb[nbElem] = entier;
@@ -90,7 +91,7 @@ public class PileEntierPositifOuNul {
 	public void contenu() {
 		System.out.println("------------------  Contenu ----------------");
 		for (int i = this.nbElem; i > 0; i--) {
-			System.out.println("l'élément numero : " + i + " vaut "
+			System.out.println("l'Ã©lÃ©ment numero : " + i + " vaut "
 					+ this.tabNb[i - 1]);
 		}
 		System.out.println("--------------------------------------------");
